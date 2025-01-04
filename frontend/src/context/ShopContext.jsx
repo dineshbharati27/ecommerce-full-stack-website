@@ -10,7 +10,7 @@ const ShopContextProvider = (props) =>{
     
     const currency = '$';
     const delivery_fee = 10;
-    const backendUrl = "http://localhost:4000";
+    const backendUrl = "https://ecommerce-backend-code-51zk.onrender.com";
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
@@ -134,7 +134,7 @@ const ShopContextProvider = (props) =>{
             setToken(localStorage.getItem('token'))
             getUserCart(localStorage.getItem('token'))
         }
-    },[])
+    },[token])
 
     const value = {
         products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch, cartItems, setCartItems, addToCart, getCartCount, updateQuantity, getCartAmount, navigate, backendUrl, token, setToken

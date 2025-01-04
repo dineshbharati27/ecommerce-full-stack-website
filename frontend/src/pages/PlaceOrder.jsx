@@ -5,7 +5,6 @@ import { assets } from '../assets/assets'
 import { ShopContext } from '../context/ShopContext'
 import { toast } from 'react-toastify'
 import axios from 'axios'
-import { resolvePath } from 'react-router-dom'
 
 const PlaceOrder = () => {
 

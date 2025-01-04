@@ -34,7 +34,7 @@ const Orders = () => {
 
   useEffect(() => {
     loadOrderData();
-  },[token])
+  },[token, loadOrderData])
 
   return (
     <div className='border-t pt-16'>
